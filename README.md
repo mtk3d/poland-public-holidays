@@ -2,9 +2,9 @@
 
 A small but comprehensive, fully tested library that computes the dates of public holidays in Poland.
 
-# Usage
+## Usage
 
-```
+```shell
 npm install poland-public-holidays
 ```
 
@@ -30,24 +30,25 @@ holidaysIn2020[0].namePL // Nowy Rok
 holidaysIn2020[0].date // Wed Jan 01 2020 01:00:00 GMT+0100 (Central European Standard Time)
 ```
 
-# API
+## API
 
-## getHolidaysInYear(year)
+### getHolidaysInYear(year)
 
 Accepts a valid `Date` object, a valid ISO8601 date string or a positive number (below 275760, the maximum year in JS). Returns an array of objects containing information about public holidays in the given year. The holiday objects will have the following properties:
+
 - `date` - a `Date` instance set to the day when the holiday is observed
 - `name` - the English name of the holiday
 - `namePL` - the Polish name of the holiday
 
-## isHoliday(date)
+### isHoliday(date)
 
 Accepts a valid `Date` object or a valid ISO8601 date string. Returns `true` if there is a public holiday on the given date, and `false` if there is not.
 
-## getHolidayOnDate(date)
+### getHolidayOnDate(date)
 
 Accepts a valid `Date` object or a valid ISO8601 date string. Returns an object with information about the holiday if there is a public holiday on the given date, and `undefined` if there is not. The object will have the same properties as the ones in the array returned by `getHolidaysInYear`.
 
-# License
+## License
 
 Copyright 2021 Kamil Szydlowski
 
