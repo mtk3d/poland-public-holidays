@@ -43,6 +43,12 @@ const holidays: (FixedHoliday | MovableHoliday)[] = [
 		date: '11-11',
 		type: 'fixed',
 	},
+  {
+		name: 'Christmas Eve',
+		namePL: 'Wigilia Bożego Narodzenia',
+		date: '12-24',
+		type: 'fixed',
+  },
 	{
 		name: 'Christmas',
 		namePL: 'Boże Narodzenie',
